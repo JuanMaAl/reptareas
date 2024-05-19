@@ -5,8 +5,9 @@ class Task:
 
   def infoTask(self):
     actualStatus = "Pendiente"
-    if self.status == True:
+    if self.status:
       actualStatus = "Completada"
     print("Tarea: " + self.name + "\nEstado: " + actualStatus)
 
-  
+  def completeTask(self):
+    self.status = True
