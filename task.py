@@ -8,3 +8,5 @@ class Task:
     if self.status == True:
       actualStatus = "Completada"
     print("Tarea: " + self.name + "\nEstado: " + actualStatus)
+
+  
