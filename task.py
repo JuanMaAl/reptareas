@@ -7,4 +7,4 @@ class Task:
     actualStatus = "Pendiente"
     if self.status == True:
       actualStatus = "Completada"
-    print("Tarea: " + self.name + "\nEstado de la tarea: " + actualStatus)
+    print("Tarea: " + self.name + "\nEstado: " + actualStatus)

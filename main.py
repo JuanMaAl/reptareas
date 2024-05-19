@@ -1,5 +1,10 @@
-from task import *
+from taskList import TaskList
 
-task1 = Task("Desayunar", True)
+listofTasks = TaskList()
 
-task1.infoTask()
+listofTasks.addTask('Comerse un Bocadillo')
+listofTasks.addTask('Guardar la ropa')
+listofTasks.addTask('Pescar')
+
+listofTasks.printTasks()
+
