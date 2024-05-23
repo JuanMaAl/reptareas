@@ -13,19 +13,25 @@ class TaskList:
     def printTasks(self):
         taskNumber = 1
         for task in self.list:
-            print('\nNúmero: ' + str(taskNumber))
+            print('\nNúmero: ' + str(taskNumber), end= " -> ")
             task.infoTask()
             taskNumber = taskNumber + 1
 
     #Update task status
     def updateTask(self, number = 1):
-        indexToUpdate = int(number) -1
-        self.list[indexToUpdate].completeTask()
+        try:
+            indexToUpdate = int(number) -1
+            self.list[indexToUpdate].completeTask()
+        except:
+            print("Error en la introducción del número de tarea")
 
     #Delete a task 
     def deleteTask (self, number = 1):
-        indexToDelete = int(number) - 1
-        del self.list[indexToDelete]
+        try:
+            indexToDelete = int(number) - 1
+            del self.list[indexToDelete]
+        except:
+            print("Error en la introducción del número de tarea")    
 
     
 

@@ -7,7 +7,7 @@ class Task:
     actualStatus = "Pendiente"
     if self.status:
       actualStatus = "Completada"
-    print("Tarea: " + self.name + "\nEstado: " + actualStatus)
+    print("Tarea: " + self.name + " -> Estado: " + actualStatus)
 
   def completeTask(self):
     self.status = True
